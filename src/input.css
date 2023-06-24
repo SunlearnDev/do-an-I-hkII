@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-max-w
+@layer components{
+        .medu-item {
+        @apply inline-block text-red-50;
+        }
+}

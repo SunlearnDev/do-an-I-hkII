@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/themify-icons/themify-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,38 +14,68 @@
 
     <title></title>
 </head>
-<body>
+<body class="">
     <div class="root">
             <header  class="h-16 max-w-screen-2xl">
-                <div class="header-tt h-full  mx-auto px-28 bg-blue-500">
-                    <div class="header h-full  flex flex-row">
-                        <div class="br flex h-full basis-1/12 text-3xl uppercase  font-extrabold justify-center items-center">
+                <nav class=" h-full  mx-auto px-28 flex flex-row justify-between items-center bg-zinc-800">
+                         <!-- Hiển thi logo -->
+                        <div class=" flex  basis-2/12 h-full text-3xl uppercase  font-extrabold items-center ">
                             <h1 class="tt-logo text-red-600 mr-1 ">Fire</h1>
-                            <h1 class="tt-logow text-white mr-1">watch</h1>
-                        </div>
-                        <div class="mian-nav flex basis-10/12 text-white uppercase font-medium text-xl  items-center ml-2  ">
-                            <a href="" class="nav-menu  px-2.5 ">
-                                <h2>home</h2>
-                            </a href="" class="nav-menu  px-2.5">
-                                <h2>movies</h2>
-                            </a>
-                            <a href="" class="nav-menu  px-2.5">
-                                <h2>category</h2>
-                            </a>
-                            <a href="" class="nav-menu  px-2.5">
-                                <h2>trending</h2>
-                            </a>
-                            <a href="" class="nav-menu  px-2.5">
-                                <h2>search</h2>
-                            </a>
-                        </div>
-                        <div class="right-nav basis-1/12 flex justify-center items-center ">
-                           <div class="buton-login text-white bg-red-700 text-lg h-2/3 w-24 justify-center items-center flex rounded-e-xl rounded-s-xl" >
-                            <h2>Log In</h2>
-                           </div>
-                        </div>
-                    </div>
-                </div>
+                            <h1 class="tt-logow text-white mr-1">Watch</h1>
+                        </div><!-- End Logo -->
+
+                             <!-- Tag Menu -->                       
+                            <ul class="flex  basis-5/12 items-center ">
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Home</a></li>
+                                <li class=" inline-block  basis-1/5  text-red-50   "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Movie Series</a>
+                                    <!-- <ul>
+                                        <li>Update</li>
+                                        <li>Russia</li>
+                                        <li>America</li>
+                                        <li>India</li>
+                                        <li>China</li>
+                                        <li>Japan</li>
+                                        <li>Vietnamese</li>
+                                        <li>France</li>
+                                        <li>ThaiLand</li>
+                                        <li>Kokea</li>
+                                        <li>HongKong</li>
+                                        <li>Taiwan</li>
+                                    </ul> -->
+                                </li>
+                                <li class=" inline-block  basis-1/5  text-red-50   text-center"><a href="" class="block font-semibold text-l  hover:text-red-600 ">Category</a>
+                                    <!-- <ul>
+                                        <li>Update</li>
+                                        <li>2023</li>
+                                        <li>2022</li>
+                                        <li>2021</li>
+                                        <li>2020</li>
+                                        <li>2019</li>
+                                        <li>2018</li>
+                                        <li>2017</li>
+                                        <li>2016</li>
+                                        <li>2015</li>
+                                        <li>2014</li>
+                                        <li>2013</li>
+                                        <li>2012</li>
+                                        <li>2011</li>
+                                        <li>2010</li>
+                                    </ul> -->
+                                </li>
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Movie</a></li>
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Review</a></li>
+                            </ul>
+                        <!-- End menu  -->
+                        <div class="basis-4/12">
+                                <button type="button" name="Search" onclick="" class="outline-none bg-none text-red-50   hover:text-red-600 ">Search</button>
+                         </div>
+                                        <!-- Login -->
+                        <div class="right-nav    basis-1/12  h-full  flex items-center  ">
+                           <button  type="button" name="login" onclick="" class="buton-login font-semibold text-l delay-200 float-right text-white bg-red-600 text-lg h-2/3 w-24 rounded-e-xl rounded-s-xl hover:bg-red-500 " >
+                            <h2 class="">Log In</h2>
+                           </button>
+                        </div> <!-- End login -->
+                </nav>
             </header><!-- end header -->
             <main>
                 <div class="slider">
