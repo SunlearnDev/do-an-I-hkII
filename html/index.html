@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="/src/main.css">
     <title></title>
 </head>
-<body class="">
-    <div class="root">
-            <header  class="h-16 max-w-screen-2xl">
-                <nav class=" h-full  mx-auto px-28 flex flex-row justify-between items-center bg-zinc-800">
+<body class="bg-black">
+    <div class="root max-h-screen  max-w-screen-2xl ">
+            <header  class="h-16 max-w-screen-2xl z-50 sticky">
+                <nav class=" h-full  mx-auto px-28 flex flex-row justify-between items-center bg-opacity-70 bg-black">
                          <!-- Hiển thi logo -->
                         <div class=" flex  basis-2/12 h-full text-3xl uppercase  font-extrabold items-center ">
                             <h1 class="tt-logo text-red-600 mr-1 ">Fire</h1>
@@ -26,71 +27,270 @@
 
                              <!-- Tag Menu -->                       
                             <ul class="flex  basis-5/12 items-center ">
-                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Home</a></li>
-                                <li class=" inline-block  basis-1/5  text-red-50   "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Movie Series</a>
-                                    <!-- <ul>
-                                        <li>Update</li>
-                                        <li>Russia</li>
-                                        <li>America</li>
-                                        <li>India</li>
-                                        <li>China</li>
-                                        <li>Japan</li>
-                                        <li>Vietnamese</li>
-                                        <li>France</li>
-                                        <li>ThaiLand</li>
-                                        <li>Kokea</li>
-                                        <li>HongKong</li>
-                                        <li>Taiwan</li>
-                                    </ul> -->
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="/html/index.html" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Home</a></li>
+                                <li class=" inline-block group relative text-center  basis-1/5  text-red-50   "><a href="" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Series</a>
+                                    <ul class=" absolute p-1  h-40 grid  grid-cols-3 top-16 gap-2 w-96 bg-black   opacity-0 invisible duration-00 ease-in-out  group-hover:opacity-100  group-hover:visible ">
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Update</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Russia</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">America</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">India</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">China</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Japan</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Vietnamese</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">France</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">ThaiLand</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Kokea</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">HongKong</a></li>
+                                        <li class=" px-1.5 hover:text-red-600 transition   "><a href="" class="">Taiwan</a></li>
+                                    </ul>
                                 </li>
-                                <li class=" inline-block  basis-1/5  text-red-50   text-center"><a href="" class="block font-semibold text-l  hover:text-red-600 ">Category</a>
-                                    <!-- <ul>
-                                        <li>Update</li>
-                                        <li>2023</li>
-                                        <li>2022</li>
-                                        <li>2021</li>
-                                        <li>2020</li>
-                                        <li>2019</li>
-                                        <li>2018</li>
-                                        <li>2017</li>
-                                        <li>2016</li>
-                                        <li>2015</li>
-                                        <li>2014</li>
-                                        <li>2013</li>
-                                        <li>2012</li>
-                                        <li>2011</li>
-                                        <li>2010</li>
-                                    </ul> -->
+                                <li class=" inline-block  basis-1/5  group relative text-red-50   text-center"><a href="" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Category</a>
+                                    <ul class="absolute  h-52 grid p-1 grid-cols-3 top-16 gap-2 w-96 bg-black opacity-0 invisible duration-00 ease-in-out  group-hover:opacity-100  group-hover:visible ">
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">Update</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2023</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2022</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2021</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2020</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2019</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2018</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2017</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2016</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2015</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2014</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2013</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2012</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2011</a></li>
+                                        <li class="px-3 cursor-pointer hover:text-red-600 transition"><a href="" class="">2010</a></li>
+                                    </ul>
                                 </li>
-                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Movie</a></li>
-                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block font-semibold text-l  hover:text-red-600 ">Review</a></li>
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Movie</a></li>
+                                <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Review</a></li>
                             </ul>
                         <!-- End menu  -->
-                        <div class="basis-4/12">
-                                <button type="button" name="Search" onclick="" class="outline-none bg-none text-red-50   hover:text-red-600 ">Search</button>
+                        <div class="basis-4/12 ">
+                                <button type="button" name="Search" onclick="" class="outline-none bg-none text-red-50 font-semibold text-l  hover:text-red-600 ">Search</button>
                          </div>
                                         <!-- Login -->
                         <div class="right-nav    basis-1/12  h-full  flex items-center  ">
-                           <button  type="button" name="login" onclick="" class="buton-login font-semibold text-l delay-200 float-right text-white bg-red-600 text-lg h-2/3 w-24 rounded-e-xl rounded-s-xl hover:bg-red-500 " >
-                            <h2 class="">Log In</h2>
-                           </button>
+                           <button  type="button" name="login" onclick="" class="buton-login font-semibold text-l transition duration-0 hover:duration-700 float-right text-white bg-red-600 text-l h-9 w-24 rounded-e-xl rounded-s-xl ease-in-out  hover:bg-red-500 " >
+                           Log In
                         </div> <!-- End login -->
                 </nav>
             </header><!-- end header -->
-            <main>
-                <div class="slider">
-
+            <main class=" max-w-full ">
+                <div class=" slider w-full relative top-0 left-0 right-0 bottom-0 ">
+                    <!-- <img src="/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2 (BQ).jpg" alt="" class="bg-cover w-full "> -->
+                        <div class="absolute z-10 bottom-8 left-12 w-96 h-64 px-1">
+                            <p class=" py-2.5 text-white text-xl font-bold ">SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN</p>
+                            <p class=" py-2.5 text-gray-300 text-xs " >Shazam! Wrath Of The Gods - Shazam! Fury of the Gods revolves around the return of the "boy" superhero Shazam no longer believes in himself, because he thinks he is just a kid....</p>
+                            <div class=" py-2.5 z-10 flex  ">
+                                <button type="button" name="play-video" class="hover:bg-slate-200 w-28 h-10  rounded-lg bg-white flex justify-center items-center mr-1 py-2" ><a href="" class="text-xl font-bold  text-red-600 "><i class="text-xl ti-control-play"></i> Play </a></button>  
+                                <button type="button" name="info-video" class="h-10  w-36 rounded-lg bg-gray-300 flex justify-center items-center mx-2 py-2 text-ll font-semibold"> <i class=" ti-info font-medium text-base"></i> More Info </button>                             
+                            </div>
+                        </div>
+                        
+                    <div class="video-trailde z-0  absolute m-0 w-full "><video src="/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2 (1080p_24fps_H264-128kbit_AAC).mp4" type="video/mp4"  autoplay muted class="m-0 w-full"></video></div>
                 </div><!-- end-slider -->
 
-                <div class="story-nb">
+                <div class="Popular-nb my-8">
+                            <div class=" px-14">
+                                <div class=" my-3"><h2 class="text-white text-2xl font-semibold">Popular</h2></div>
+                                        
+                                        <div class="flex flex-row gird xl:grid-rows-6  gap-x-2 ">
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                            <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                        </div>
+                            </div>
+                </div><!-- end Popular-nb -->
+                <div class="Trending-new my-8">
+                    <div class=" px-14">
+                        <div class=" my-3"><h2 class="text-white text-2xl font-semibold">Trending Movies </h2></div>
+                                
+                                <div class="flex flex-row gird xl:grid-rows-6  gap-x-2 ">
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full ></div>
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                    <div class="w-52 bg-white rounded text-center "><img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQDyhAMGLiHMb_0OP0KVva3lmdeQcTZsrIacKnKDWZ9ujPNg-I1rEAXbYb5OXpiMTCCkwiIUcR5M-YL3CDoWB_gBTARJ1JWmh_s.jpg?r=38b" alt="" object-cover w-full></div>
+                                </div>
+                    </div>
+                </div><!-- end Trending -->
+                <div class="best-Picture mb-10">
+                    <div class=" px-14">
+                        <div class=" my-3"><h2 class="text-white text-2xl font-semibold">Best Picture </h2></div>
+                        <div class="flex flex-row gird xl:grid-rows-2  gap-x-6  ">
+                            <div class="flex font-sans">
+                                <div class="flex-none w-56 relative">
+                                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7d159b173256601.648ccd08126d5.jpg" alt="" class="absolute inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
+                                </div>
+                                <form class="flex-auto p-6 bg-white">
+                                  <div class="flex flex-wrap">
+                                    <h1 class="flex-auto font-medium text-slate-900">
+                                      Extraction 2  
+                                    </h1>
+                                    <div class="w-full flex-none mt-2 order-1 text-3xl font-bold text-green-500">
+                                      98% Match
+                                    </div>
+                                    <div class="text-sm font-medium w-14 h-6 text-center  bg-red-600 text-white">
+                                      Top 10
+                                    </div>
+                                  </div>
+                                  <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+                                    <div class="space-x- flex text-sm font-bold pl-4">
+                                      <ul class="flex text-sm font-bold gird grid-rows-3 gap-5 justify-center items-center"> 
+                                        <li class="list-disc ">Explosive</li>
+                                        <li class="list-disc ">Vilolet</li>
+                                        <li class="list-disc ">Action Thriller</li>
+                                      </ul>                 
+                                    </div>
+                                  </div>
+                                  <div class="flex space-x-4 mb-5 text-sm font-medium">
+                                    <div class="flex-auto flex space-x-4">
+                                      <button class="h-10 px-6 font-semibold rounded-full bg-red-600 text-white" type="submit">
+                                        Play
+                                      </button>
+                                      <button class="h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900" type="button">
+                                        Later Watch
+                                      </button>
+                                    </div>
+                                    <button class="flex-none flex items-center justify-center w-9 h-9 rounded-full text-red-600 bg-violet-50" type="button" aria-label="Like">
+                                      <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div class="flex items-center h-6  gird grid-rows-3 gap-x-3">
+                                    <div class="text-sm text-center text-gray-700 w-11 h-6 border-gray-700 border-2 ">
+                                        18+
+                                     </div>
+                                     <p class="text-sm text-center text-gray-700"> 2h30m</p>
+                                     <div class=" text-sm text-center text-gray-700 w-11 h-6 border-gray-700 border-2">
+                                        HDR
+                                     </div>
 
-                </div><!-- end story-nb -->
-                <div class="story-new">
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="flex font-sans">
+                                <div class="flex-none w-56 relative">
+                                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7d159b173256601.648ccd08126d5.jpg" alt="" class="absolute inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
+                                </div>
+                                <form class="flex-auto p-6 bg-white">
+                                  <div class="flex flex-wrap">
+                                    <h1 class="flex-auto font-medium text-slate-900">
+                                      Extraction 2  
+                                    </h1>
+                                    <div class="w-full flex-none mt-2 order-1 text-3xl font-bold text-green-500">
+                                      98% Match
+                                    </div>
+                                    <div class="text-sm font-medium w-14 h-6 text-center  bg-red-600 text-white">
+                                      Top 10
+                                    </div>
+                                  </div>
+                                  <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+                                    <div class="space-x- flex text-sm font-bold pl-4">
+                                      <ul class="flex text-sm font-bold gird grid-rows-3 gap-5 justify-center items-center"> 
+                                        <li class="list-disc ">Explosive</li>
+                                        <li class="list-disc ">Vilolet</li>
+                                        <li class="list-disc ">Action Thriller</li>
+                                      </ul>                 
+                                    </div>
+                                  </div>
+                                  <div class="flex space-x-4 mb-5 text-sm font-medium">
+                                    <div class="flex-auto flex space-x-4">
+                                      <button class="h-10 px-6 font-semibold rounded-full bg-red-600 text-white" type="submit">
+                                        Play
+                                      </button>
+                                      <button class="h-10 px-6 font-semibold rounded-full border border-slate-200 text-slate-900" type="button">
+                                        Later Watch
+                                      </button>
+                                    </div>
+                                    <button class="flex-none flex items-center justify-center w-9 h-9 rounded-full text-red-600 bg-violet-50" type="button" aria-label="Like">
+                                      <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div class="flex items-center h-6  gird grid-rows-3 gap-x-3">
+                                    <div class="text-sm text-center text-gray-700 w-11 h-6 border-gray-700 border-2 ">
+                                        18+
+                                     </div>
+                                     <p class="text-sm text-center text-gray-700"> 2h30m</p>
+                                     <div class=" text-sm text-center text-gray-700 w-11 h-6 border-gray-700 border-2">
+                                        HDR
+                                     </div>
 
-                </div><!-- end story-new -->
-                <div class="story-new">
+                                  </div>
+                                </form>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div><!-- end Best Picture -->
+                <div class="cinemaMoves  w-full my-32 bg-repeat bg-contain " >
+                  <div class="logo-popcorn h-36 w-36 z-20  flex justify-center items-center">
+                      <img src="/img/popcorn.png" alt="" class="w-4/6 h-4/6 mx-auto my-auto">
+                  </div>
+                    <div class="bg-o-b h-full mx-12  ">
+                        <div class="cinenma-heard w-full h-1/6   flex justify-center items-center">
+                            <h2 class="text-3xl text-white font-semibold "> Cinema </h2>
+                        </div>
+                      <div class=" h-5/6 w-full  flex flex-wrap justify-center gird grid-cols-5 gap-3 gird-row-2 px-11 py-3 ">
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/22/4e715da74cd34b28_abbca6a7835f5493_47522168744878923.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/16/8399986ad92a5114_6be13a412d64e4ee_45274168691665973.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/02/9397ae89cb57447c_ca15585bd2249854_250501685650524816068.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/05/29/9882e3b18185ad8c_30e1318c01b76fce_470421685356643516068.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/08/5da8c4f94caf8b8e_acde036a22757fed_1933961686214238216068.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/09/a15938442d6f8833_da20334d123b5a2e_45136168632877753.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/15/e468b23aaf8838dd_cc44eb6b20c4388c_42571168683429933.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/09/ad75a15d785fd223_bf0ae0911db6fe47_1944911686328130416068.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/05/09/4ac697eee714acbd_ebb2506f0ec7ee4d_1736811683612604216068.jpg" alt="" class="w-52"></div>
+                        <div class=""> <img src="https://s198.imacdn.com/ff/2023/06/26/c24f6dd4180416a6_e605d5c6c2d30f30_30056168776525023.jpg" alt="" class="w-52"></div>
+                      </div>
+                    </div>
+                </div>
+                <!-- end cinemaMoves -->
+                <!-- top-charts -->
+                <div class="top-charts h-64">
+                 <div class="gird grid-cols-5 grid-rows-1 flex  gap-5  w-full h-full">
+                  <div class="top-one w-1/5 ">
+                    <div class="img-one w-48 h-40 absolute ">
+                      <img src="https://s198.imacdn.com/ff/2023/04/07/82360e23cbdb40bb_196fc4a1c47b2b1d_49291168088539383.jpg" alt="" class="w-28  mr-0 ml-auto h-full">
+                    </div>
+                    <div class="one  ">1</div>
+                  </div>
+                  <div class="top-two  w-1/5">                   
+                    <div class="img-two w-48 h-40 absolute ">
+                      <img src="https://s198.imacdn.com/ff/2023/06/27/8f0bef00fa38c3b2_c9233aba58a57347_36308168785440493.jpg" alt="" class="w-28 mr-0 ml-auto  h-full">
+                    </div>
+                    <div class="two  w-1.5">2</div>
+                  </div>
+                  <div class="top-three w-1/5 ">                 
+                    <div class="img-three w-48 h-40 absolute ">
+                      <img src="https://s198.imacdn.com/ff/2023/06/27/c0e8229e0737199a_5fc339b619dba7e9_26515168785252233.jpg" alt="" class="w-28 mr-0 ml-auto  h-full">
+                    </div>
+                    <div class="three  ">3</div>
+                  </div>
+                  <div class="top-four  w-1/5">                 
+                    <div class="img-four w-48 h-40 absolute ">
+                      <img src="https://s198.imacdn.com/ff/2020/07/13/84f7ca9bafbeec6b_f82237300848c339_438431594636307416068.jpg" alt="" class=" mr-0 ml-auto w-28 h-full">
+                    </div>
+                    <div class="four ">4</div>
+                  </div>
+                  <div class="top-five w-1/5 ">
+                    <div class="img-five w-48 h-40 absolute ">
+                      <img src="https://s198.imacdn.com/ff/2020/06/19/f420500f87000eee_c7a2a8b2daa47b40_499451592563804616068.jpg" alt="" class=" mr-0 ml-auto w-28 h-full">
+                    </div>
+                    <div class="five ">5</div>
+                  </div>
+                 </div>
+                </div> <!-- End top-charts -->
 
-                </div><!-- end story-new -->
             </main><!-- end -->
             <footer>
 
@@ -98,11 +298,3 @@
     </div> <!-- end -->
 </body>
 </html>
-
-<!-- ----------------------------------icon-------------------------------- -->
-<!-- <div class="icon-social-network">
-    <a href=""><i class="ti-facebook" style="color: #7a7a7a;"></i></a>
-    <a href=""><i class="ti-instagram" style="color: #7a7a7a;"></i></a>
-    <a href=""><i class="ti-google" style="color: #7a7a7a;"></i></a>
-    <a href=""><i class="ti-pinterest-alt" style="color: #7a7a7a;"></i></a>
-</div> -->
