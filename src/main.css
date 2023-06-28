@@ -1,0 +1,43 @@
+.lie-hie{
+        line-height:64px
+}
+
+.slider{
+        height:617px;
+}
+
+.video-trailde::before{
+        content: "";
+    background: linear-gradient(180deg, rgb(0 0 0 / 50%)0%, #000000 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.cinemaMoves {
+        min-height: 770px;
+        background-image: url(/img/pngwing.com.png);
+        position:relative;
+}
+.bg-o-b{
+        
+        background: -webkit-linear-gradient(270deg, rgba(255, 111, 0, 0.83) 0%, rgba(107, 46, 0, 0.71) 50%, #000000 100%);
+        height: 100%;
+        position:absolute;
+        left: 0;
+        top: 0;
+}
+.logo-popcorn{
+        position: absolute;
+        right: 200px;
+         top: -60px;
+        border-radius: 50%;
+        z-index: 20;
+        background-color: rgba(255, 111, 0, 1);
+        box-shadow: 3px 3px 10px 3px  rgba(69, 68, 68, 0.26) );
+}
+.top-charts{
+        width:999px;
+}
