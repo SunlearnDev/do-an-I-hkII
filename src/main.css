@@ -5,6 +5,11 @@
 .slider{
         height:617px;
 }
+img{
+        height:100%;
+        width:100%;
+        
+}
 
 .video-trailde::before{
         content: "";
@@ -38,6 +43,17 @@
         background-color: rgba(255, 111, 0, 1);
         box-shadow: 3px 3px 10px 3px  rgba(69, 68, 68, 0.26) );
 }
-.top-charts{
-        width:999px;
+
+.one,.two,.three,.four,.five{
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #555;
+    font-size: 254px;
+    font-weight: 800;
+    left: -10px;
+    line-height: 254px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    z-index: -1;
 }
