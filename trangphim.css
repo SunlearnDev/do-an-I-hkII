@@ -1,0 +1,245 @@
+#header{
+    background-color: #37373A;
+    display:flex;
+    line-height:20px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+li{
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#header ul li{
+     display: inline-block;
+     padding-left: 40px;
+}
+#header ul li a:hover{
+    color: red;
+    border-bottom:1px solid red;
+}
+#canchu{
+    margin-left:200px;
+}
+video{
+    margin-top: 30px;
+    margin-left:10%;
+    
+}
+body{
+    background-color:#1E1E1E ;
+}
+#conterner{
+   display:flex
+}
+.gtphim{
+    margin-right:10%;
+    color:white ;
+    margin-top:40px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+#chu-p{
+    border: 1px solid #979090;
+    border-radius:10px;
+    margin-right:75%;
+    text-align: center;
+    margin-top:-10px;
+    font-size:15px
+}
+.chu-p2{
+    font-size:19px ;
+}
+.dienvien{
+    color: #979090;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.xem-phim{
+    border-radius:5px;
+    margin-top:-5px;
+    font-size:15px;
+    background-color:#37373A;
+    height:30px;
+    border: 1px solid #37373A;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.xem-phim:hover{
+     background-color:red;
+     color:white;
+}
+.icontong{
+    margin-top: 10px;
+    display: flex;
+}
+.icon1{
+    text-align: center;
+    border-radius:5px;
+    margin-left:20px;
+}
+.icon1:hover{
+    border:2px solid red ;
+    margin-left: 40px;
+}
+.material-symbols-outlined{
+    margin-right: 10px;
+}
+.icon2{
+    text-align: center;
+    border-radius:5px;
+    margin-left:150px ;
+}
+.icon2:hover{
+    border:2px solid blue ;
+    margin-left: 180px;
+}
+.icon3{
+    text-align: center;
+    border-radius:5px;
+    margin-left:150px ;
+}
+.icon3:hover{
+    border:2px solid rgb(56, 222, 44) ;
+    margin-left: 180px;
+}
+.iconvideo{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.iconvideo img{
+    opacity: 2;
+    width:30px;
+    height: 40px;
+}
+.iconvideo p{
+    margin-left:10px;
+    font-size:20px;
+    color: aliceblue;
+}
+.conterner1 img{
+    width: 200px;
+    height:276px;
+    margin-left:60px;
+}
+.conterner1{
+    margin-top:20px; 
+}
+.logo{
+    display: flex;
+    margin-left: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 800;  
+}
+.logo h1{
+    font-size: 25px;
+    color: rgb(229, 36, 36);
+}
+#wat{
+    color: white;
+    margin-left: 5px;
+}
+.nhandan img{
+    margin-left:50px;
+}
+.footer1{
+    display: flex;
+}
+.vefire{
+    margin-left: 20%;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.vefire h2{
+    color: #D2D2D2;
+    font-size: 15px;
+    margin-top: 28px;
+}
+.vefire p{
+    font-size: 12px;
+    color: white;
+}
+.vefire p:hover{
+    color: blue;
+}
+.dichvu{
+    margin-left: 10%;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.dichvu h2{
+    color: #D2D2D2;
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 35px; 
+}
+.dichvu p{
+    font-size: 12px;
+    color: white;
+} 
+.dichvu p:hover{
+    color: blue;
+}
+.quydinh{
+    margin-left: 15%;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.quydinh h2{
+    color: #D2D2D2;
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 35px;
+}
+.quydinh p{
+    font-size: 12px;
+    color: white;
+}
+.quydinh p:hover{
+    color: blue;
+}
+.duongke{
+    border:1px solid black;
+    margin-left:40px;
+    margin-right:280px;
+}
+/* .logo2{
+    display: flex;
+    margin-left: 50px;
+}
+.logo2 h1{
+    font-size: 10px;
+    color: red;
+}
+#wat{
+    color: white;
+    margin-left: 5px;
+} */
+#footer{
+    margin-top:20px;
+    background-color: #B31312;
+    box-shadow: 0px 0px 35px 10px #e94747;
+    border-radius: 4px;
+}
+.gioithieu p{
+    font-size:10px;
+    color: rgb(188, 149, 149);
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.gioithieu{
+    margin-left: 35px;
+}
+.footer2{
+    display: flex;
+}
+.tuvan{
+    margin-left:20%;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
