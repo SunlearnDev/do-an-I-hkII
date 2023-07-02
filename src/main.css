@@ -8,7 +8,7 @@
 img{
         height:100%;
         width:100%;
-        
+        border-radius:8px;
 }
 
 .video-trailde::before{
@@ -23,11 +23,9 @@ img{
 
 .cinemaMoves {
         min-height: 770px;
-        background-image: url(/img/pngwing.com.png);
         position:relative;
 }
 .bg-o-b{
-        
         background: -webkit-linear-gradient(270deg, rgba(255, 111, 0, 0.83) 0%, rgba(107, 46, 0, 0.71) 50%, #000000 100%);
         height: 100%;
         position:absolute;
@@ -57,3 +55,183 @@ img{
     top: 0px;
     z-index: -1;
 }
+.collection{
+        background: -webkit-linear-gradient(256deg, rgba(255, 111, 0, 0.83) 0%, rgba(107, 46, 0, 0.71) 50%, #000000 100%);
+        width:100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+}
+.bg-img{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(255, 255, 255, 0) 100%);
+        
+}
+.popcorn {
+        position:absolute ;
+        top:0;
+        left:0;
+    }
+    .popcorn  div{
+    position:absolute ;
+    display:block ;
+    }
+    .popcorn  div:nth-child(1){
+        left:10%; 
+        animation:fall 12s linear infinite ;
+        animation-delay:-2s;
+    
+    }
+    .popcorn  div:nth-child(2){
+        left:40%; 
+        animation:fall 17s linear infinite ;
+        animation-delay:-4s;
+    }
+    .popcorn  div:nth-child(3){
+        left:15%; 
+        animation:fall 20s linear infinite ;
+        animation-delay:-7s;
+        
+    }
+    .popcorn  div:nth-child(4){
+        left:50%; 
+       animation:fall 18s linear infinite ; 
+       animation-delay:-5s;
+    }
+    .popcorn  div:nth-child(5){
+        left:85%; 
+        animation:fall 24s linear infinite ;
+        animation-delay:-5s;
+    }
+    .popcorn  div:nth-child(6){
+        left:65%; 
+        animation:fall 36s linear infinite ;
+        animation-delay:-1s;
+    }
+    .popcorn  div:nth-child(7){
+        left:90%; 
+        animation:fall 45s linear infinite ;
+        animation-delay:-2s;
+    }
+    
+    .popcorn  div:nth-child(8){
+        left:40%; 
+        animation:fall 35s linear infinite ;
+        animation-delay:-12s;
+    }
+    .popcorn  div:nth-child(9){
+        left:70%; 
+        animation:fall 65s linear infinite ;
+        animation-delay:-7s;
+    }
+    .popcorn  div:nth-child(10){
+        left:230%; 
+        animation:fall 55s linear infinite ;
+        animation-delay:-1s;
+    }
+    .popcorn  div:nth-child(11){
+        left:68%; 
+        animation:fall 43s linear infinite ;
+        animation-delay:-2s;
+    }
+    .popcorn  div:nth-child(1){
+        left:10%; 
+        animation:fall 32s linear infinite ;
+        animation-delay:-6s;
+    
+    }
+    .popcorn  div:nth-child(12){
+        left:3%; 
+        animation:fall 35s linear infinite ;
+        animation-delay:-1s;
+    }
+    .popcorn  div:nth-child(13){
+        left:9%; 
+        animation:fall 20s linear infinite ;
+        animation-delay:-2s;
+        
+    }
+    .popcorn  div:nth-child(14){
+        left:34%; 
+       animation:fall 18s linear infinite ; 
+       animation-delay:-5s;
+    }
+    .popcorn  div:nth-child(15){
+        left:56%; 
+        animation:fall 14s linear infinite ;
+        animation-delay:-5s;
+    }
+    .popcorn  div:nth-child(16){
+        left:38%; 
+        animation:fall 16s linear infinite ;
+        animation-delay:-3s;
+    }
+    .popcorn  div:nth-child(17){
+        left:14%; 
+        animation:fall 53s linear infinite ;
+        animation-delay:-2s;
+    }
+    
+    .popcorn  div:nth-child(18){
+        left:42%; 
+        animation:fall 25s linear infinite ;
+        animation-delay:-19s;
+    }
+    .popcorn  div:nth-child(19){
+        left:78%; 
+        animation:fall 16s linear infinite ;
+        animation-delay:-7s;
+    }
+    .popcorn  div:nth-child(20){
+        left:230%; 
+        animation:fall 19s linear infinite ;
+        animation-delay:-1s;
+    }
+    @keyframes fall{
+        0%{
+            opacity:1;
+            top:-5%;
+            transform:translateX (20px) rotate(0deg);
+        }
+        5%{
+            opacity:0.8;
+            transform:translateX (-20px) rotate(45deg);
+        }
+        10%{
+            
+            transform:translateX (-20px) rotate(39deg);
+        }
+        20%{
+            
+            transform:translateX (-20px) rotate(54deg);
+        }
+        30%{
+            
+            transform:translateX (-20px) rotate(95deg);
+        }
+        40%{
+    
+            transform:translateX (-20px) rotate(90deg);
+        }
+        60%{
+            
+           transform:translateX (-20px) rotate(135deg); 
+        }
+        80%{
+        
+            transform:translateX (-20px) rotate(180deg);
+        }
+        100%{
+            
+            top:100%;
+            transform:translateX (-20px) rotate(225deg);
+        }
+        }
+    .popcorn 1{
+        transform: rotateX(180deg);
+    }
+    
+    .popcorn{
+    height:770px;
+    width:1329px;
+    max-height:770px;
+    }
