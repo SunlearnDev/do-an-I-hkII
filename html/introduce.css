@@ -13,7 +13,7 @@
 }
 
 .container-main{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('/assets/bg.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('bg.jpg');
 	/* opacity: 0.8; */
     background-size: cover;
     display: flex;
