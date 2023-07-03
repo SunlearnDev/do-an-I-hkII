@@ -40,6 +40,7 @@ a {
   font-size: 35px;
   color: #ff0000;
   font-weight: 1000;
+  font-family:'Lato', sans-serif;
 }
 .nav_item {
   column-gap: 25px;
