@@ -86,7 +86,8 @@
     font-size: 35px;
     color: #ff0000;
     font-weight: 900;
-    /* font-family: sans-serif; */
+    font-family:'Lato', sans-serif;
+;
 }
 
 .title-main{
