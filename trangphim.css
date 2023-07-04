@@ -1,4 +1,4 @@
-
+/* 
 #header{
     background-color: #37373A;
     display:flex;
@@ -21,7 +21,7 @@ a{
 #header ul li a:hover{
     color: red;
     border-bottom:1px solid red;
-}
+} */
 #canchu{
     margin-left:200px;
 }
@@ -150,7 +150,7 @@ body{
     margin-top:20px;
     overflow: hidden;
 }
-.logo{
+/* .logo{
     display: flex;
     margin-left: 50px;
     font-family: 'lato', sans-serif;
@@ -163,7 +163,7 @@ body{
 #wat{
     color: white;
     margin-left: 5px;
-}
+} */
 .nhandan img{
     margin-left:50px;
 }
@@ -262,5 +262,126 @@ body{
     margin-left:20%;
     font-family: 'lato', sans-serif;
     font-weight: 700;  
+}
+.all{
+    margin: 0;
+    padding: 0%;
+}
+.logo{
+    display: flex;
+    margin-left: 60px;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+}
+.logo h1{
+    font-size: 30px;
+    color: rgb(229, 36, 36);
+}
+#wat{
+    color:white;
+    margin-left: 5px;
+}
+#header{
+    position: fixed;
+    background-color:black;
+    opacity: 86%;
+    filter: blur(0);
+   display: flex;
+   width: 100%;
+   font-family: 'lato', sans-serif;
+   font-weight: 300;
+  
+}
+
+.khungmenu1{
+    margin-top: 25px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.main-menu li a{
+    color: white;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin-left:50px;
+}
+.main-menu li{
+   position: relative; 
+}
+.sub-menu{
+    display: block;
+    list-style: none;
+    
+}
+.nuoc ul.sub-menu{
+      position: absolute;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+      padding: 5px 10px ;
+      width:400px;
+      font-size: 12px;
+      opacity: 0;
+     visibility: hidden;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.nuoc ul.sub-menu a{
+    padding: 5px 10px;
+}
+.nuoc:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.nam ul.sub-menu{
+    position: absolute;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    padding:5px 20px 0px;
+    font-size: 12px;
+    width:300px;
+    opacity: 0;
+   visibility: hidden;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.nam ul.sub-menu a{
+  padding: 0px 10px;
+}
+.nam:hover .sub-menu{
+  opacity: 1;
+  visibility: visible;
+}
+.main-menu li a:hover{
+    color: red;
+}
+.sub-menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.search{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+}
+.search:hover{
+    color: red;
 }
 
