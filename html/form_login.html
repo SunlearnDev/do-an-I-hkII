@@ -1,97 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FireWatch with Login & Registration Form</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/netflix-icon.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav">
-        <a href="introduce.html" class="nav_logo">
-            <span style="color: #ff0000;">FIRE</span>
-            <span style="color: #fff;">WATCH</span>
-        </a>
-        
-        <ul class="nav_items">
-          <li class="nav_item">
-            <a href="#" class="nav_link">Home</a>
-            <a href="#" class="nav_link">Product</a>
-            <a href="#" class="nav_link">Services</a>
-            <a href="#" class="nav_link">Contact</a>
-          </li>
-        </ul>
+    <link rel="stylesheet" href="loginsignup.css">
 
-        <button class="button" id="form-open">Login</button>
-      </nav>
-    </header>
+    <title>Netflix-clone</title>
+</head>
 
-    <!-- Home -->
-    <section class="home">
-      <div class="form_container">
-        <i class="uil uil-times form_close"></i>
-        <!-- Login From -->
-        <div class="form login_form">
-          <form action="#">
-            <h2>Login</h2>
+<body>
+    <div class="container">
+        <header>
+                <a href="introduce.html" class="nav_logo">
+                    <span style="color: #ff0000;">FIRE</span>
+                    <span style="color: #fff;">WATCH</span>
+                </a>          
+        </header>
 
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
-              <i class="uil uil-envelope-alt email"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Enter your password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
+        <div class="container-login">
+            <h1>Sign In</h1>
+
+            <form action="">
+
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+
+                <button type="submit" id="btnEntrar">Sign In </button>
+            </form>
+
+            <div class="help">
+                <div>
+                    <input type="radio" id="me">
+                    <label for="me">Remember me</label>
+                </div>
+                    
+                <a href="">Need help?</a>
             </div>
 
-            <div class="option_field">
-              <span class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Remember me</label>
-              </span>
-              <a href="#" class="forgot_pw">Forgot password?</a>
+            <a href="" class="facebook"><img src="facebook.png" class="icon"/> Sign in by Facebook</a>
+
+            <div class="connect">
+                <p>New to FireWatch? <span id="span01">Sign up now</span>.</p>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<span id="span02"> Learn more.</span></p>
             </div>
-
-            <button class="button">Login Now</button>
-
-            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
-          </form>
         </div>
 
-        <!-- Signup From -->
-        <div class="form signup_form">
-          <form action="#">
-            <h2>Signup</h2>
-
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
-              <i class="uil uil-envelope-alt email"></i>
+        <footer>
+            <div class="container-footer">
+                <p>Question? <a href="">Contact us</a></p>
+    
+                <div class="listas">
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Corporate Infomation</a></li>
+                    </ul>
+                </div>
+    
+                <select>
+                    <option>English</option>
+                    <option>Vietnamese</option>
+                </select>
             </div>
-            <div class="input_box">
-              <input type="password" placeholder="Create password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Confirm password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
+        </footer>
+    </div>
 
-            <button class="button">Signup Now</button>
-
-            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
+    <script>
+        let btnEntrar = document.querySelector('#btnEntrar');
+    btnEntrar.addEventListener('click', entrar);
+    function entrar(e){
+        e.preventDefault();
+        window.location.href = "user.html";
+    }
+    </script>
+</body>
 </html>
