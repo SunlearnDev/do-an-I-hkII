@@ -171,7 +171,7 @@ body{
     display: flex;
 }
 .vefire{
-    margin-left: 20%;
+    margin-left: 5%;
     font-family: 'lato', sans-serif;
     font-weight: 700;  
 }
@@ -185,7 +185,7 @@ body{
     color: white;
 }
 .vefire p:hover{
-    color: blue;
+    color: red;
 }
 .dichvu{
     margin-left: 10%;
@@ -203,7 +203,7 @@ body{
     color: white;
 } 
 .dichvu p:hover{
-    color: blue;
+    color: red;
 }
 .quydinh{
     margin-left: 15%;
@@ -221,12 +221,12 @@ body{
     color: white;
 }
 .quydinh p:hover{
-    color: blue;
+    color: red;
 }
 .duongke{
     border:1px solid bisque;
     margin-left:40px;
-    margin-right:280px;
+    margin-right:20px;
 }
 /* .logo2{
     display: flex;
@@ -245,13 +245,17 @@ body{
     margin-left: 20px;
 }
 .gioithieu p{
-    font-size:10px;
+    font-size:20px;
     color: #D2D2D2;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
+    font-weight: 700;
+   
 }
 .gioithieu{
-    margin-left: 35px;
+    margin-left: 30px;
+    margin-top: -5px;
 }
 .footer2{
     display: flex;
@@ -261,7 +265,9 @@ body{
 .tuvan{
     margin-left:20%;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
+    font-weight: 700;
+    margin-right:10%;
+    color: white;
 }
 .all{
     margin: 0;
@@ -325,9 +331,10 @@ nav{
 }
 .nuoc ul.sub-menu{
       position: absolute;
-      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+      background-color:black;
       padding: 5px 10px ;
       width:400px;
+      opacity: 86%;
       font-size: 12px;
       opacity: 0;
      visibility: hidden;
@@ -335,6 +342,7 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin-top:28px ;
 }
 .nuoc ul.sub-menu a{
     padding: 5px 10px;
@@ -345,16 +353,18 @@ nav{
 }
 .nam ul.sub-menu{
     position: absolute;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-color:black;
     padding:5px 20px 0px;
     font-size: 12px;
-    width:300px;
+    width:350px;
+    opacity: 86%;
     opacity: 0;
    visibility: hidden;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 10px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+   margin-top:28px ;
 }
 .nam ul.sub-menu a{
   padding: 0px 10px;
@@ -375,11 +385,11 @@ nav{
     background-color: black;
     border: 1px solid black;
     color: white;
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 16px;
+    margin-top: 3px;
     margin-left: 20px;
     font-family: 'lato', sans-serif;
-    font-weight: 300;
+    font-weight: 700;
 }
 .search:hover{
     color: red;
@@ -391,8 +401,24 @@ nav{
     border-radius: 50%;
 }
 .avt{
-    margin-left: 200px;
+    margin-left: 300px;
 }
 .avata:hover{
     border: 1px solid white;
+}
+.boderleft{
+    border-left:1px solid white;
+    margin-left: 300px;
+    margin-top:50px;
+    margin-bottom:35px;
+}
+.logo3{
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    margin-left: 40px;
+}
+.logo3 h1{
+    font-size: 15px;
+    color: rgb(229, 36, 36);
 }
