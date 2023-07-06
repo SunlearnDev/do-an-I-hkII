@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/netflix-icon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Final/login/style.css">
+    <link rel="stylesheet" href="/Final/login/loginsignup.css">
+
+    <title>Netflix-clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- <img src="./assets/img/logo.png" alt="Logo"> -->
+                <a href="/intro/introduce.html" class="nav_logo">
+                    <span style="color: #ff0000;">FIRE</span>
+                    <span style="color: #fff;">WATCH</span>
+                </a>          
+        </header>
+
+        <div class="container-login">
+            <h1>Sign In</h1>
+
+            <form action="">
+
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+
+                <button type="submit" id="btnEntrar">Sign In </button>
+            </form>
+
+            <div class="help">
+                <div>
+                    <input type="radio" id="me">
+                    <label for="me">Remember me</label>
+                </div>
+                    
+                <a href="">Need help?</a>
+            </div>
+
+            <a href="" class="facebook"><img src="/assets/img/facebook.png" class="icon"/> Sign in by Facebook</a>
+
+            <div class="connect">
+                <p>New to FireWatch? <span id="span01">Sign up now</span>.</p>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<span id="span02"> Learn more.</span></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-footer">
+                <p>Question? <a href="">Contact us</a></p>
+    
+                <div class="listas">
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Corporate Infomation</a></li>
+                    </ul>
+                </div>
+    
+                <select>
+                    <option>English</option>
+                    <option>Vietnamese</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let btnEntrar = document.querySelector('#btnEntrar');
+        btnEntrar.addEventListener('click', entrar);
+         function entrar(e){
+        e.preventDefault();
+        window.location.href = "user.html";
+    }
+    </script>
+</body>
+</html>
