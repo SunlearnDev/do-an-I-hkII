@@ -22,6 +22,10 @@ a{
     color: red;
     border-bottom:1px solid red;
 } */
+html{
+    font-family: 'lato', sans-serif;
+
+}
 #canchu{
     margin-left:200px;
 }
@@ -42,7 +46,7 @@ body{
 .gtphim{
     margin-right:10%;
     color:white ;
-    margin-top:40px;
+    margin:0 65px; 
     font-family: 'lato', sans-serif;
     font-weight: 700;  
 }
@@ -88,10 +92,12 @@ body{
     height:40px;
     font-size:15px;
     overflow: hidden;
+    padding-left:13px;
 }
 .icon1:hover{
     border:2px solid red ;
     transition: all 0.5s ease-in-out;
+    cursor: pointer
 }
 .material-symbols-outlined{
     margin-right: 10px;
@@ -102,11 +108,13 @@ body{
     margin-left:150px ;
     width: 110px;
     height:40px;
-    font-size:15px ;
+    font-size:15px;
+    padding-left:13px;
 }
 .icon2:hover{
     border:2px solid blue ;
     transition: all 0.3s ease-in-out;
+    cursor: pointer
 }
 .material-symbols-outlined {
     font-size: 6rem; 
@@ -119,26 +127,30 @@ body{
     width: 110px;
     height:40px;
     font-size:15px ;
+    padding-left:13px;
 }
 .icon3:hover{
     border:2px solid rgb(56, 222, 44) ;
     transition: all 0.3s ease-in-out;
+    cursor: pointer
 }
 .iconvideo{
     display:flex;
     margin-top: 20px;
     margin-left: 60px;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
+    font-weight: 700;
+    font-size:40px;  
+    align-items: center;
 }
-.iconvideo img{
+/* .iconvideo img{
     opacity: 2;
     width:30px;
     height: 40px;
-}
+} */
 .iconvideo p{
     margin-left:10px;
-    font-size:20px;
+    font-size:24px;
     color: aliceblue;
 }
 .conterner1 img{
@@ -280,20 +292,23 @@ body{
 }
 .logo{
     display: flex;
-    margin-left: 130px;
     font-family: 'lato', sans-serif;
     text-transform: uppercase;
     font-weight:800;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    
 }
 .logo h1{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: red;
     --tw-text-opacity: 1;
     color: rgb(220 38 38 / var(--tw-text-opacity)); 
 }
 #wat{
     color:white;
-    margin-left: 5px;
+    margin-left:4px;
 }
 .logo4{
     display: flex;
@@ -316,19 +331,21 @@ body{
     backdrop-filter: blur(0);
    display: flex;
    width: 100%;
+   height: 64px;
    font-family: 'lato', sans-serif;
    font-weight: 300;
    z-index:auto;
 }
 
 .khungmenu1{
-    margin-top: 25px;
     font-weight: 600;
+    
 }
 nav{
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .main-menu{
     display: flex;
@@ -364,7 +381,6 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    margin-top:20px ;
     padding-top:10px;
     padding-bottom:10px;
     padding-right:2px ;
@@ -388,7 +404,6 @@ nav{
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 10px;
    transition: opacity 0.3s ease, visibility 0.3s ease;
-   margin-top:20px ;
 }
 .nam ul.sub-menu a{
   padding: 0px 10px;
@@ -419,12 +434,16 @@ nav{
     color: red;
 }
 .avata{
-    height: 40px;
     width: 40px;
     border-radius: 50%;
+    
 }
 .avt{
-    margin-left: 300px;
+   justify-content: end;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   display: flex;
 }
 .boderleft{
     border-left:1px solid white;
@@ -467,4 +486,16 @@ nav{
 .logo5 h1{
     font-size: 15px;
     color: rgb(229, 36, 36);
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%;
+    padding-left:112px;
+    padding-right: 112px;
+}
+.xemphim{
+  
+    
 }
