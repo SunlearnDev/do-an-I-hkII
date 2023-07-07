@@ -175,18 +175,19 @@ body{
     display: flex;
 }
 .vefire{
-    margin-left: 5%;
+    margin-left: 2%;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
+   
 }
 .vefire h2{
-    color: #D2D2D2;
-    font-size: 15px;
+    color: white;
+    font-size: 19px;
     margin-top: 28px;
 }
 .vefire p{
-    font-size: 12px;
+    font-size: 19px;
     color: white;
+    font-weight: 200;
 }
 .vefire p:hover{
     color: red;
@@ -194,16 +195,14 @@ body{
 .dichvu{
     margin-left: 10%;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
 }
 .dichvu h2{
-    color: #D2D2D2;
-    font-weight: 200;
-    font-size: 15px;
+    color: white;
+    font-size: 19px;
     margin-top: 35px; 
 }
 .dichvu p{
-    font-size: 12px;
+    font-size: 19px;
     color: white;
 } 
 .dichvu p:hover{
@@ -212,25 +211,26 @@ body{
 .quydinh{
     margin-left: 15%;
     font-family: 'lato', sans-serif;
-    font-weight: 700;  
 }
 .quydinh h2{
-    color: #D2D2D2;
-    font-weight: 200;
-    font-size: 15px;
+    color: white;
+    font-size: 19px;
     margin-top: 35px;
 }
 .quydinh p{
-    font-size: 12px;
+    font-size: 19px;
     color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 .quydinh p:hover{
     color: red;
 }
 .duongke{
-    border:1px solid bisque;
+    border:1px solid #e5e7eb;
     margin-left:40px;
     margin-right:20px;
+    opacity: 0.4;
 }
 /* .logo2{
     display: flex;
@@ -250,16 +250,17 @@ body{
 }
 .gioithieu p{
     font-size:20px;
-    color: #D2D2D2;
+    color: #6b7280;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-family: 'lato', sans-serif;
-    font-weight: 700;
+    font-weight: 200;
    
 }
 .gioithieu{
     margin-left: 30px;
     margin-top: -5px;
+   
 }
 .footer2{
     display: flex;
@@ -267,10 +268,10 @@ body{
     margin-left: 10px;
 }
 .tuvan{
-    margin-left:20%;
+    margin-left:3%;
     font-family: 'lato', sans-serif;
     font-weight: 700;
-    margin-right:10%;
+    margin-right:50px;
     color: white;
 }
 .all{
@@ -279,10 +280,10 @@ body{
 }
 .logo{
     display: flex;
-    margin-left: 60px;
+    margin-left: 130px;
     font-family: 'lato', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight:800;
 }
 .logo h1{
     font-size: 30px;
@@ -294,6 +295,20 @@ body{
     color:white;
     margin-left: 5px;
 }
+.logo4{
+    display: flex;
+    margin-left: 40px;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight:800;
+}
+.logo4 h1{
+    font-size: 30px;
+    color: red;
+    --tw-text-opacity: 1;
+    color: rgb(220 38 38 / var(--tw-text-opacity)); 
+}
+
 #header{
     position: fixed;
     background-color:black;
@@ -349,7 +364,7 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    margin-top:28px ;
+    margin-top:20px ;
     padding-top:10px;
     padding-bottom:10px;
     padding-right:2px ;
@@ -373,7 +388,7 @@ nav{
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 10px;
    transition: opacity 0.3s ease, visibility 0.3s ease;
-   margin-top:28px ;
+   margin-top:20px ;
 }
 .nam ul.sub-menu a{
   padding: 0px 10px;
@@ -413,9 +428,10 @@ nav{
 }
 .boderleft{
     border-left:1px solid white;
-    margin-left: 300px;
+    margin-left: 160px;
     margin-top:50px;
     margin-bottom:35px;
+    opacity: 0.5;
 }
 .logo3{
     display: flex;
@@ -424,6 +440,31 @@ nav{
     margin-left: 40px;
 }
 .logo3 h1{
+    font-size: 15px;
+    color: rgb(229, 36, 36);
+}
+.mail-sdt{
+    display: flex;
+  
+}
+.follow-us{
+    display: flex;
+}
+.tuvan a:hover{
+    color: red;
+}
+.banquyen{
+    display: flex;
+    justify-content: center;   
+}
+.logo5{
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    margin-top:6px;
+    margin-left:6px ;
+}
+.logo5 h1{
     font-size: 15px;
     color: rgb(229, 36, 36);
 }
