@@ -1,0 +1,507 @@
+/* 
+#header{
+    background-color: #37373A;
+    display:flex;
+    line-height:20px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+li{
+    list-style: none;
+    margin-top: 5px;    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#header ul li{
+     display: inline-block;
+     padding-left: 40px;
+}
+#header ul li a:hover{
+    color: red;
+    border-bottom:1px solid red;
+} */
+html{
+    font-family: 'lato', sans-serif;
+
+}
+#canchu{
+    margin-left:200px;
+}
+video{
+    margin-top: 30px;
+    margin-left:10%;
+    
+}
+body{
+    background-color:black ;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#conterner{
+   display:flex
+}
+.gtphim{
+    margin-right:10%;
+    color:white ;
+    margin:0 65px; 
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+#chu-p{
+    border: 1px solid #979090;
+    border-radius:10px;
+    margin-right:75%;
+    text-align: center;
+    margin-top:-10px;
+    font-size:15px
+}
+.chu-p2{
+    font-size:19px ;
+}
+.dienvien{
+    color: #979090;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.xem-phim{
+    border-radius:5px;
+    margin-top:-5px;
+    font-size:15px;
+    background-color:#37373A;
+    height:30px;
+    border: 1px solid #37373A;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;  
+}
+.xem-phim:hover{
+     background-color:red;
+     color:white;
+}
+.icontong{
+    margin-top: 10px;
+    display: flex;
+}
+.icon1{
+    text-align: center;
+    border-radius:5px;
+    margin-left:20px;
+    width: 110px;
+    height:40px;
+    font-size:15px;
+    overflow: hidden;
+    padding-left:13px;
+}
+.icon1:hover{
+    border:2px solid red ;
+    transition: all 0.5s ease-in-out;
+    color:red ;
+    cursor: pointer
+}
+.material-symbols-outlined{
+    margin-right: 10px;
+}
+.icon2{
+    text-align: center;
+    border-radius:5px;
+    margin-left:150px ;
+    width: 110px;
+    height:40px;
+    font-size:15px;
+    padding-left:13px;
+}
+.icon2:hover{
+    border:2px solid blue ;
+    color: blue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer 
+}
+.material-symbols-outlined {
+    font-size: 6rem; 
+  }
+.icon3{
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    margin-left:150px;
+    width: 110px;
+    height:40px;
+    font-size:15px ;
+    padding-left:13px;
+}
+.icon3:hover{
+    border:2px solid rgb(56, 222, 44) ;
+    transition: all 0.3s ease-in-out;
+    color: rgb(56, 222, 44);
+    cursor: pointer
+}
+.iconvideo{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    font-size:40px;  
+    align-items: center;
+}
+/* .iconvideo img{
+    opacity: 2;
+    width:30px;
+    height: 40px;
+} */
+.iconvideo p{
+    margin-left:10px;
+    font-size:24px;
+    color: aliceblue;
+}
+.conterner1 img{
+    width: 200px;
+    height:276px;
+    margin-left:60px;
+    transition: all 0.3s ease-in-out;
+}
+.conterner1 img:hover{
+    transform: scale(1.1);
+}
+.conterner1{
+    margin-top:20px;
+    overflow: hidden;
+}
+/* .logo{
+    display: flex;
+    margin-left: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 800;  
+}
+.logo h1{
+    font-size: 30px;
+    color: rgb(229, 36, 36);
+}
+#wat{
+    color: white;
+    margin-left: 5px;
+} */
+.nhandan img{
+    margin-left:50px;
+}
+.footer1{
+    display: flex;
+}
+.vefire{
+    margin-left: 2%;
+    font-family: 'lato', sans-serif;
+   
+}
+.vefire h2{
+    color: white;
+    font-size: 19px;
+    margin-top: 28px;
+}
+.vefire p{
+    font-size: 19px;
+    color: white;
+    font-weight: 200;
+}
+.vefire p:hover{
+    color: red;
+}
+.dichvu{
+    margin-left: 10%;
+    font-family: 'lato', sans-serif;
+}
+.dichvu h2{
+    color: white;
+    font-size: 19px;
+    margin-top: 35px; 
+}
+.dichvu p{
+    font-size: 19px;
+    color: white;
+} 
+.dichvu p:hover{
+    color: red;
+}
+.quydinh{
+    margin-left: 15%;
+    font-family: 'lato', sans-serif;
+}
+.quydinh h2{
+    color: white;
+    font-size: 19px;
+    margin-top: 35px;
+}
+.quydinh p{
+    font-size: 19px;
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.quydinh p:hover{
+    color: red;
+}
+.duongke{
+    border:1px solid #e5e7eb;
+    margin-left:40px;
+    margin-right:20px;
+    opacity: 0.4;
+}
+/* .logo2{
+    display: flex;
+    margin-left: 50px;
+}
+.logo2 h1{
+    font-size: 10px;
+    color: red;
+}
+#wat{
+    color: white;
+    margin-left: 5px;
+} */
+#footer{
+    margin-top:20px;
+    margin-left: 20px;
+}
+.gioithieu p{
+    font-size:20px;
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'lato', sans-serif;
+    font-weight: 200;
+   
+}
+.gioithieu{
+    margin-left: 30px;
+    margin-top: -5px;
+   
+}
+.footer2{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.tuvan{
+    margin-left:3%;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    margin-right:50px;
+    color: white;
+}
+.all{
+    margin: 0;
+    padding: 0%;
+}
+.logo{
+    display: flex;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight:800;
+    width:100%;
+    height: 100%;
+    align-items: center;
+   
+}
+.logo > h1{
+    font-size: 35px;
+    --tw-text-opacity: 1;
+    color: rgb(220 38 38 / var(--tw-text-opacity)); 
+}
+#wat{
+    color:white;
+    margin-left:4px;
+}
+.logo4{
+    display: flex;
+    margin-left: 40px;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    font-weight:800;
+}
+.logo4 h1{
+    font-size: 30px;
+    --tw-text-opacity: 1;
+    color: rgb(220 38 38 / var(--tw-text-opacity)); 
+}
+
+#header{
+    position: fixed;
+    background-color:rgba(0,0,0,0.8);
+    backdrop-filter: blur(11);
+   width: 100%;
+   height: 64px;
+   font-family: 'lato', sans-serif;
+   font-weight: 300;
+   z-index:9999;
+}
+
+.khungmenu1{
+    font-weight: 600;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.main-menu li a{
+    color: white;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin-left:50px;
+}
+.main-menu li{
+   position: relative; 
+}
+.sub-menu{
+    display: block;
+    list-style: none;
+    
+}
+.nuoc ul.sub-menu{
+      position: absolute;
+      background-color:black;
+      padding: 5px 10px ;
+      width:400px;
+      opacity: 86%;
+      font-size: 12px;
+      opacity: 0;
+     visibility: hidden;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:2px ;
+}
+.nuoc ul.sub-menu a{
+    padding: 5px 10px;
+}
+.nuoc:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.nam ul.sub-menu{
+    position: absolute;
+    background-color:black;
+    padding:20px 10px ;
+    font-size: 12px;
+    width:350px;
+    opacity: 86%;
+   visibility: hidden;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.nam ul.sub-menu a{
+  padding: 0px 10px;
+}
+.nam:hover .sub-menu{
+  opacity: 1;
+  visibility: visible;
+}
+.main-menu li a:hover{
+    color: red;
+}
+.sub-menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.search{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 20px;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+}
+.search:hover{
+    color: red;
+}
+.avata{
+    width: 40px;
+    border-radius: 50%;
+    height:33px;    
+}
+.avt{
+   justify-content: end;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   display: flex;
+}
+.boderleft{
+    border-left:1px solid white;
+    margin-left: 160px;
+    margin-top:50px;
+    margin-bottom:35px;
+    opacity: 0.5;
+}
+.logo3{
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    margin-left: 40px;
+}
+.logo3 h1{
+    font-size: 15px;
+    color: rgb(229, 36, 36);
+}
+.mail-sdt{
+    display: flex;
+  
+}
+.follow-us{
+    display: flex;
+}
+.tuvan a:hover{
+    color: red;
+}
+.banquyen{
+    display: flex;
+    justify-content: center;   
+}
+.logo5{
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    margin-top:6px;
+    margin-left:6px ;
+}
+.logo5 h1{
+    font-size: 15px;
+    color: rgb(229, 36, 36);
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%;
+    padding-left:112px;
+    padding-right: 112px;
+}
+.truongphongdo{
+    display: none;
+    color:white;
+}
+.imgtruongphongdo{
+    position: absolute;
+}
+ .imgtruongphongdo:hover.truongphongdo{
+    transform: scale(1.1);
+     color: white;
+}
