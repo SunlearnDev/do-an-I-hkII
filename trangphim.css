@@ -156,19 +156,6 @@ body{
     font-size:24px;
     color: aliceblue;
 }
-.conterner1 img{
-    width: 200px;
-    height:276px;
-    margin-left:60px;
-    transition: all 0.3s ease-in-out;
-}
-.conterner1 img:hover{
-    transform: scale(1.1);
-}
-.conterner1{
-    margin-top:20px;
-    overflow: hidden;
-}
 /* .logo{
     display: flex;
     margin-left: 50px;
@@ -337,9 +324,8 @@ body{
    height: 64px;
    font-family: 'lato', sans-serif;
    font-weight: 300;
-   z-index:auto;
+   z-index: 99;
 }
-
 .khungmenu1{
     font-weight: 600;
     
@@ -499,13 +485,80 @@ nav{
     padding-right: 112px;
 }
 .truongphongdo{
-    display: none;
-    color:white;
-}
-.imgtruongphongdo{
+    color:black;
     position: absolute;
+    background:   rgba(0, 0, 0, 0);;
+    width: 200px;
+    height: 275px;
+    margin-left:60px;
+    opacity:.9 ;
+    margin-top:-280px;
+   visibility: hidden;
 }
- .imgtruongphongdo:hover.truongphongdo{
+.truongphongdo p{
+    color:black;
+    font-weight: bold; 
+}
+.hover1{
+    position: relative;
+    display: block;
+}
+.hover1:hover .truongphongdo{
+    visibility: visible;
+}
+.conterner1 img{
+    width: 200px;
+    height:276px;
+    margin-left:60px;
+}
+/* .conterner1 img:hover{
     transform: scale(1.1);
-     color: white;
+} */
+#conterner1{
+    margin-top:20px;
+    display: flex;
+  
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+ul.list-img1{
+    display: flex;
+}
+ul.list-img1 li {
+    overflow: hidden;
+}
+ul.list-img1 li a img{
+    display: block;
+    width: 200px;
+    height:276px;
+    margin-left:50px;
+    transform: all 0.3s ease-in-uot;
+}
+ul.list-img1 li:hover img{
+  transform: scale(1.1);
+   opacity: 0.8;
+}
+ul.list-img1 li a{
+    position: relative;
+    display: block;
+}
+ul.list-img1 li a .name1{
+    position: absolute;
+    color:white;
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+    font-size:10px;
+    letter-spacing: 2px;
+    bottom:0px;
+    margin-left:40px;
+    text-transform: uppercase;
+    transform: all 0.3s ease-in-uot;
+    opacity:0;
+}
+ul.list-img1 li a:hover .name1{
+    opacity:1;
 }
