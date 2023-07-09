@@ -8,7 +8,6 @@
     <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -19,18 +18,20 @@
 </head>
 <body class="bg-black">
     <div class="root  max-w-screen-2xl  ">
-            <header  class="h-16 xl:max-w-screen-2xl z-50  fixed top-0 left-0 right-0 ">
-                <nav class=" xl:h-full  xl:mx-auto  xl:px-28 flex flex-row justify-between items-center bg-opacity-70 bg-black backdrop-blur">
+            <header  class="h-16 max-w-screen-2xl  z-50  fixed top-0 left-0 right-0 ">
+                <nav class="  xl:h-full   xl:mx-auto  xl:px-3 px-28 flex flex-row justify-between items-center bg-opacity-70 bg-black backdrop-blur">
                          <!-- Hiển thi logo -->
-                        <a href="/Final/intro/introduce.html">
-                          <div class=" flex  basis-2/12 mx-1 xl:h-full xl:text-3xl uppercase  font-extrabold items-center ">
-                            <h1 class="tt-logo text-red-600 mr-1 ">Fire</h1>
-                            <h1 class="tt-logow text-white mr-1">Watch</h1>
+                        <div class="flex">
+                          <a href="/Final/intro/introduce.html">
+                            <div class=" xl:flex  xl:basis-2/12 mx-1 xl:h-full xl:text-3xl uppercase  font-extrabold items-center ">
+                              <h1 class="tt-logo text-red-600 mr-1 ">Fire</h1>
+                              <h1 class="tt-logow text-white mr-1">Watch</h1>
+                          </div>
+                          </a><!-- End Logo -->
                         </div>
-                        </a><!-- End Logo -->
 
-                             <!-- Tag Menu -->                       
-                            <ul class="flex xl:w-full   basis-5/12 items-center ">
+                        <!-- Tag Menu -->                       
+                            <ul class="xl:flex xl:w-full   basis-5/12 items-center md:hidden  ">
                                 <li class=" inline-block  basis-1/5  text-red-50  text-center "><a href="/html/index.html" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Home</a></li>
                                 <li class=" inline-block group relative text-center  basis-1/5  text-red-50   "><a href="" class="block lie-hie font-semibold text-l  hover:text-red-600 ">Series</a>
                                     <ul class=" absolute p-1  h-40 grid  grid-cols-3 top-16 gap-2 w-96 bg-black  backdrop-blur  bg-opacity-70 invisible duration-00 ease-in-out  group-hover:opacity-100  group-hover:visible ">
@@ -73,12 +74,12 @@
                         <!-- End menu  -->
 
                         <div class="basis-4/12 ">
-                                <button type="button" name="Search" onclick="" class="outline-none bg-none text-red-50 font-semibold text-l  hover:text-red-600 ">Search</button>
+                                <input type="text" placeholder="Search" name="Search" onclick="" class="outline-none w-72 px-2 bg-none text-red-50 font-semibold text-l leading-8 border-solid rounded-xl h-8 border-slate-300  hover:text-red-600  "></input>
                          </div>
-                        <!-- Login -->
 
-                        <div class="right-nav xl:mr-1 xl:w-auto   basis-1/12  h-full  flex items-center  ">
-                           <a href="/Final/login/loginsignup.html"><button  type="button" name="login" onclick="" class="buton-login font-semibold text-l transition duration-0 hover:duration-700 float-right text-white bg-red-600 text-l h-9 w-24 rounded-e-xl rounded-s-xl ease-in-out  hover:bg-red-500 " >
+                        <!-- Login -->
+                        <div class="right-nav xl:mr-1 xl:w-auto xl:justify-end  xl:basis-1/12  h-full  xl:flex items-center   ">
+                           <a href="/Final/login/loginsignup.html"><button  type="button" name="login" onclick="" class="buton-login  font-semibold text-l transition duration-0 hover:duration-700 float-right text-white bg-red-600 text-l h-9 w-24 rounded-e-xl rounded-s-xl ease-in-out  hover:bg-red-500 " >
                             Log In</a>
                         </div> <!-- End login -->
 
@@ -95,7 +96,7 @@
                             <button type="button" name="info-video" class="h-10  w-36 rounded-lg backdrop-blur bg-opacity-30 hover:bg-opacity-70 bg-white flex justify-center items-center mx-2 py-2 text-ll font-semibold"> <i class=" ti-info font-medium text-base"></i> More Info </button>                             
                         </div>
                     </div>
-                    <div class="video-trailde z-0  absolute m-0 xl:w-full "><video src="/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2/0626.mp4" type="video/mp4"  autoplay muted class="m-0 w-full"></video></div>
+                    <div class="video-trailde z-0  absolute m-0 lg:w-full xl:w-full "><video src="/SHAZAM! CƠN THỊNH NỘ CỦA CÁC VỊ THẦN - Official Trailer 2/0626.mp4" type="video/mp4"  autoplay muted class="m-0 lg:w-full"></video></div>
               </div><!-- end-slider -->
             <div class="Popular-nb my-11">
                         <div class=" px-14">
@@ -573,7 +574,7 @@
                   </div>
                   <!-- end cinema -->
                   <!-- cinema 1 -->
-                    <div class="relative hover:scale-105 ">
+                    <div class="relative  ">
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full ">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20">
@@ -635,7 +636,8 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/05/29/9882e3b18185ad8c_30e1318c01b76fce_470421685356643516068.jpg" alt="" class="w-52">
                       </div>
-                      <!-- end cinema 4 -->
+                      <!-- end cinema 4-->
+
                     <div class="relative">
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
@@ -656,6 +658,8 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/06/08/5da8c4f94caf8b8e_acde036a22757fed_1933961686214238216068.jpg" alt="" class="w-52">
                       </div>
+                       <!-- end cinema 5-->
+
                     <div class="relative">
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
@@ -676,7 +680,8 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/05/05/41f5704c84a3b0bb_8d25fd16cc70a73f_1817211683304501516068.jpg" alt="" class="w-52">
                       </div>
-                  <a href="">
+                       <!-- end cinema 5-->
+                  <a href="/html/trangphim1.html">
                     <div class="relative">
                       <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                  <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
@@ -698,7 +703,9 @@
                     <img src="https://s198.imacdn.com/ff/2023/06/15/e468b23aaf8838dd_cc44eb6b20c4388c_42571168683429933.jpg" alt="" class="w-52">
                    </div>
                   </a>
+                   <!-- end cinema 6-->
                     <div class="relative">
+                      
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20">
@@ -718,6 +725,7 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/06/09/ad75a15d785fd223_bf0ae0911db6fe47_1944911686328130416068.jpg" alt="" class="w-52">
                       </div>
+                       <!-- end cinema 7-->
                     <div class="relative">
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
@@ -738,6 +746,7 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/05/09/4ac697eee714acbd_ebb2506f0ec7ee4d_1736811683612604216068.jpg" alt="" class="w-52">
                       </div>
+                       <!-- end cinema 8-->
                     <div class="relative">
                          <div class="absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out ">
                     <div class=" absolute opacity-20 animate-ping bg-white rounded-full">
@@ -758,6 +767,7 @@
                   </div > 
                        <img src="https://s198.imacdn.com/ff/2023/06/26/c24f6dd4180416a6_e605d5c6c2d30f30_30056168776525023.jpg" alt="" class="w-52">
                       </div>
+
                   </div>
                 </div>
             </div><!-- end cinemaMoves -->
@@ -1320,5 +1330,4 @@
             </footer><!-- end -->
     </div> <!-- end -->
 </body>
-
 </html>
