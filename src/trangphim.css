@@ -61,6 +61,7 @@ body{
 .chu-p2{
     font-size:19px ;
 }
+
 .dienvien{
     color: #979090;
     font-family: 'lato', sans-serif;
@@ -71,10 +72,12 @@ body{
     margin-top:-5px;
     font-size:15px;
     background-color:#37373A;
-    height:30px;
+    height: 35px;
+    width:102px;
     border: 1px solid #37373A;
     font-family: 'lato', sans-serif;
     font-weight: 700;  
+    cursor:pointer;
 }
 .xem-phim:hover{
      background-color:red;
@@ -84,59 +87,42 @@ body{
     margin-top: 10px;
     display: flex;
 }
-.icon1{
-    text-align: center;
-    border-radius:5px;
-    margin-left:20px;
-    width: 110px;
-    height:40px;
-    font-size:15px;
+.icon1, .icon2, .icon3{
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
     overflow: hidden;
-    padding-left:13px;
+    display: flex;
+    justify-content: center;
+   text-color:#ffff;
 }
 .icon1:hover{
-    border:2px solid red ;
-    transition: all 0.5s ease-in-out;
-    color:red ;
+    background-color: rgba(220 ,38 ,38, 0.9) ;
+    color:#ffff ;
     cursor: pointer
 }
 .material-symbols-outlined{
     margin-right: 10px;
 }
-.icon2{
-    text-align: center;
-    border-radius:5px;
-    margin-left:150px ;
-    width: 110px;
-    height:40px;
-    font-size:15px;
-    padding-left:13px;
-}
+
 .icon2:hover{
-    border:2px solid blue ;
-    color: blue;
-    transition: all 0.3s ease-in-out;
+    background-color: #668cff ;
+    color:#ffff ;
     cursor: pointer 
 }
 .material-symbols-outlined {
     font-size: 6rem; 
   }
-.icon3{
-    align-items: center;
-    justify-content: center;
-    border-radius:5px;
-    margin-left:150px;
-    width: 110px;
-    height:40px;
-    font-size:15px ;
-    padding-left:13px;
-}
+
 .icon3:hover{
-    border:2px solid rgb(56, 222, 44) ;
-    transition: all 0.3s ease-in-out;
-    color: rgb(56, 222, 44);
+    background-color:  #4d79ff ;
+    color:#ffff ;
     cursor: pointer
 }
+
 .iconvideo{
     display:flex;
     margin-top: 20px;
@@ -442,7 +428,8 @@ nav{
    align-items: center;
    height: 100%;
    width: 100%;
-   display: flex;
+    display:flex;
+
 }
 .boderleft{
     border-left:1px solid white;
@@ -490,9 +477,24 @@ nav{
     display: flex;
     justify-content:space-between;
     height: 100%;
-    width: 100%;
-    padding-left:112px;
-    padding-right: 112px;
+    width: 1024px;
+    margin:0 auto
+}
+.fa-user{
+    color:#ffff;
+    width:30px;
+    height:30px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #ffff;
+    border-radius:50%;
+    cursor:pointer;
+    transition-duration: 0.5s;
+}
+.fa-user:hover{
+    color:black;
+    background-color:white;
 }
 .truongphongdo{
     display: none;
@@ -504,4 +506,68 @@ nav{
  .imgtruongphongdo:hover.truongphongdo{
     transform: scale(1.1);
      color: white;
+}
+.conterner1 img{
+    width: 200px;
+    height:276px;
+    margin-left:60px;
+}
+/* .conterner1 img:hover{
+    transform: scale(1.1);
+} */
+#conterner1{
+    margin-top:20px;
+    display: flex;
+  
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+ul.list-img1{
+    display: flex;
+}
+ul.list-img1 li {
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    margin-left: 50px;
+}
+ul.list-img1 li a img{
+    display: block;
+    width: 100%;
+    height:288.88px;    
+    transform: all 0.6s ease-in-uot;
+}
+ul.list-img1 li:hover img{
+  transform: scale(1.1);
+   opacity: 0.8;
+}
+ul.list-img1 li a{
+    position: relative;
+    display: block;
+}
+ul.list-img1 li a .name1{
+    width:100%;
+    
+    position: absolute;
+    color:white;
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+    font-size:10px;
+    letter-spacing: 2px;
+    bottom:0px;
+    padding:0 10px;
+    text-transform: uppercase;
+    opacity:0;
+    background: -webkit-linear-gradient(90deg, rgb(0 0 0 / 83%) 0%, rgb(0 0 0 / 71%) 50%, #ffffff00 100%);
+}
+.name1 p {
+     padding-left:135px;
+     padding-top:10px;
+}
+ul.list-img1 li a:hover .name1{
+    opacity:1;
 }

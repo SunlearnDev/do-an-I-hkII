@@ -3,7 +3,7 @@
 }
 
 .slider{
-        height:617px;
+        height:800px;
 }
 img{
         height:100%;
@@ -13,7 +13,7 @@ img{
 
 .video-trailde::before{
         content: "";
-    background: linear-gradient(180deg, rgb(0 0 0 / 50%)0%, #000000 100%);
+    background: linear-gradient(180deg, rgb(0 0 0 / 20%)0%, #000000 100%);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -23,6 +23,7 @@ img{
 
 .cinemaMoves {
         min-height: 770px;
+        
         position:relative;
 }
 .bg-o-b{
@@ -46,13 +47,13 @@ img{
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #555;
-    font-size: 254px;
+    font-size: 320px;
     font-weight: 800;
-    left: -10px;
+    left: 30px;
     line-height: 254px;
     position: absolute;
     text-align: center;
-    top: 0px;
+    top: -10px;
     z-index: -1;
 }
 .collection{
@@ -74,6 +75,7 @@ img{
     .popcorn  div{
     position:absolute ;
     display:block ;
+
     }
     .popcorn  div:nth-child(1){
         left:10%; 
@@ -232,8 +234,7 @@ img{
     
     .popcorn{
     height:770px;
-    width:1329px;
-    max-height:770px;
+
     }
     .text-s{
     font-size:1px;

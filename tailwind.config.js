@@ -16,4 +16,11 @@ module.exports = {
   ],
   darkMode: "class"
 }
+// Initialization for ES Users
+import {
+  Animate,
+  initTE,
+} from "tw-elements";
+
+initTE({ Animate });
 

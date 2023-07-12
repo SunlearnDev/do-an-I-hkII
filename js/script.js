@@ -30,3 +30,10 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
+// Initialization for ES Users
+import {
+  Carousel,
+  initTE,
+} from "tw-elements";
+
+initTE({ Carousel });
