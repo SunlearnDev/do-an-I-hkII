@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,145 +12,130 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon fire" href="/img/icon/fire.ico">
-    <script src="/js/main.js"></script>
+    
+    <title>Login Fire Watch</title>
 </head>
 <body>
-    <script src="/js/main.js"></script>
-    <div
-    id="carouselExampleCaptions"
-    class="relative"
-    data-te-carousel-init
-    data-te-carousel-slide>
-    <!--Carousel indicators-->
-    <div
-      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-      data-te-carousel-indicators>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="0"
-        data-te-carousel-active
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="1"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 2"></button>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="2"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 3"></button>
-    </div>
-  
-    <!--Carousel items-->
-    <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <!--First item-->
-      <div
-        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-active
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-          class="block w-full"
-          alt="..." />
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+  <div class="bg-gra w-full h-screen relative">
+      <header class="w-full h-auto">
+        <div class="flex items-start">
+          <a href="/Final/intro/introduce.html">
+            <div class=" sm:flex  xl:basis-2/12 mx-1 xl:h-full xl:text-3xl uppercase  font-extrabold items-center ">
+              <h1 class="tt-logo text-red-600 mr-1 ">Fire</h1>
+              <h1 class="tt-logow text-white mr-1">Watch</h1>
+          </div>
+          </a><!-- End Logo -->
         </div>
-      </div>
-      <!--Second item-->
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-          class="block w-full"
-          alt="..." />
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <!--Third item-->
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-item
-        style="backface-visibility: hidden">
-        <img
-          src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-          class="block w-full"
-          alt="..." />
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-  
-    <!--Carousel controls - prev item-->
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="prev">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <!--Carousel controls - next item-->
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="next">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
-    <script src="/js/main.js"></script>
-  </div>
+      </header>
+      <main class="max-w-md  bg-opacity-70 bg-black backdrop-blur  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 px-10 py-10 ">
+        <selection name="home" class="home">
+          <!-- Sign In -->
+          <div class="form_contrainer">
+            <div class="form_signIn" id="signin">
+              <form action="#">
+                <h2 class="text-white text-2xl font-bold mb-4">Sign In</h2>
+                <div class="">
+                  <input type="email" placeholder="Email or Username" id="usename_login" class="border-0 text-white bg-zinc-700 p-2 min-w-full mx-auto w-96 outline-none rounded-sm h-10 mb-5" value="">
+                </div>
+                <div class="">
+                  <input type="password" placeholder="Password" id="password_login" class="border-0 text-white bg-zinc-700 p-2 min-w-full mx-auto w-96 outline-none rounded-sm h-10 mb-5" value="">
+                </div>
+                <div class="">
+                  <input type="submit" value="Sign In" name="signIn" class="cursor-pointer text-white bg-red-600 min-w-full w-96 h-10 mb-5"></input>
+                </div>
+                <div class="">
+                  <span>
+                    <input type="checkbox" name="" id="">
+                    <label for="checkbox" class="text-white">Remember me</label>
+                  </span>
+                  <a href="#" class="text-sky-600 float-right">Forgot password ? </a>
+                  <div class="flex justify-between my-5">
+                    <div class=" cursor-pointer ">
+                      <a href="" class="flex items-center">
+                        <i class="fa-brands fa-facebook-f text-sm w-5 h-5 rounded-sm flex justify-center bg-sky-800" style="color: #ffffff;"></i>
+                        <h4 for="fa-brands" class="ml-1 text-white text-sm cursor-pointer hover:text-sky-600">Sign in by Facebook </h4>
+                      </a>
+                    </div>
+                    <div class="cursor-pointer ">
+                      <a href="" class="flex items-center">
+                        <i class="fa-brands fa-google-plus-g" style="color: #d63a1f;"></i>
+                        <h4 for="fa-brands" class="ml-1 text-white text-sm cursor-pointer hover:text-sky-600">Sign in by Google</h4>
+                      </a>
+                    </div>
 
+                  </div>
+                  <div class="text-white">
+                    <h2> Don't have a FireWatch account ? <a href="#" id="signup" class="hover:decoration-red-600 hover:underline duration-700 ">Sign up now</a></h2>
+                  </div>
+                  <div class="my-5">
+                    <h2 class="text-white">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href=" " class="hover:decoration-sky-600 hover:underline duration-700 text-sky-600"> Learn more.</a></h2>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Sign Up -->
+            <div class="form-signUp min-w-full w-96">
+              <form action="#signin" class="form_signup">
+                <h2 class="text-white text-2xl font-bold mb-4 ">Sign Up</h2>
+                <div class="mb-5 filed c">
+                  <input type="email" placeholder="Email" id="email_input" class="email border-0 text-white bg-zinc-700 p-2 min-w-full w-96 outline-none rounded-sm h-10 " value="">
+                  <span class="text-white mb-5 flex text-red-600 error-mail">
+                    <i class="bx bxs-error-circle text-base mr-1 text-red-600"></i>
+                    <p class="text-red-600">Please enter a valid email address.</p>
+                  </span>
+                </div>
+                <div class="filed password_fail mb-5">
+                  <input type="password" placeholder="Create password" id="password_one" class="border-0 text-white bg-zinc-700 p-2 min-w-full w-96 outline-none rounded-sm h-10 " value="">
+                  <span class="text-white mb-5 flex text-red-600 error-pass">
+                    <i class="bx bxs-error-circle text-base mr-1 text-red-600"></i>
+                    <p class="text-red-600">Please enter at least 8 characters with numbers, symbols, capital, and small letters.</p>
+                  </span>
+                </div>
+                <div class="mb-5 filed cpassword_fail">
+                  <input type="password" placeholder="Confirm password" id="password_two" class="border-0 text-white bg-zinc-700 p-2 min-w-full w-96 outline-none rounded-sm h-10 " value="">
+                  <span class="text-white mb-5 flex text-red-60 error-cpass">
+                    <i class="bx bxs-error-circle text-base mr-1 text-red-600"></i>
+                    <p class="text-red-600">Passwords don't match.</p>
+                  </span>
+                </div>
+                <div class="w-full h-full">
+                  <input type="submit" value="Submit Now" name="signIn" class="text-white bg-red-600 min-w-full w-96 h-10 cursor-pointer"></input>
+                </div>
+
+                <div class="text-white my-5">
+                  <h2>Already have an account? <a href="#" id="login" class="hover:decoration-red-600 hover:underline duration-700 ">Login</a></h2>
+                </div>
+              </form>
+            </div>
+          </div>
+        </selection>
+      </main>
+      <!-- <footer>
+        <div class="container-footer">
+            <p>Question? <a href="">Contact us</a></p>
+
+            <div class="listas">
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                    <li><a href="">Corporate Infomation</a></li>
+                </ul>
+            </div>
+
+            <select>
+                <option>English</option>
+                <option>Vietnamese</option>
+            </select>
+        </div>
+    </footer> -->
+  </div>
+  <script src="/js/main.js"></script>
 </body>
 </html>

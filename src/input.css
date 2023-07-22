@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.card{
+    @apply : absolute w-full h-full flex justify-center items-center  text-white  hover:opacity-100 opacity-0 cursor-pointer duration-700 ease-in-out;
+}

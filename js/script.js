@@ -1,26 +1,17 @@
-const formOpenBtn = document.querySelector("#form-open"),
+const 
   home = document.querySelector(".home"),
+  form = document.querySelector(".form_signup"),
   formContainer = document.querySelector(".form_container"),
   formCloseBtn = document.querySelector(".form_close"),
   signupBtn = document.querySelector("#signup"),
   loginBtn = document.querySelector("#login"),
-  pwShowHide = document.querySelectorAll(".pw_hide");
-
-formOpenBtn.addEventListener("click", () => home.classList.add("show"));
-formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
-
-pwShowHide.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    let getPwInput = icon.parentElement.querySelector("input");
-    if (getPwInput.type === "password") {
-      getPwInput.type = "text";
-      icon.classList.replace("uil-eye-slash", "uil-eye");
-    } else {
-      getPwInput.type = "password";
-      icon.classList.replace("uil-eye", "uil-eye-slash");
-    }
-  });
-});
+  // check input errors messages
+  emailFail = form.querySelector(".email_fail"), 
+  emailInput = emailFail.querySelector(".usename"),
+  passFail = form.querySelector(".password_fail"),
+  passInput = passFail.querySelector(".password_one"),
+  cpassdFail = form.querySelector(".cpassword_fail"),
+  cpassdInput = cpassdFail.querySelector(".password_two");
 
 signupBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -30,10 +21,46 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
-// Initialization for ES Users
-import {
-  Carousel,
-  initTE,
-} from "tw-elements";
 
-initTE({ Carousel });
+// check email Validation
+
+
+function checkEmail(){
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if(!emailInput.value.match(emailPattern)){
+    return emailFail.classList.add("invalid");
+  }
+  emailFail.classList.remove("invalid");
+}
+
+function createPassword (){
+  const passPatten = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  if(!passInput.value.match(passPatten)){
+    return passFail.classList.add("invalid");
+  }
+  passFail.classList.remove("invalid");
+}
+
+function cPassword(){
+  if(passInput.value !== cpassdInput.value || cpassdInput.value === "" ){
+    return cpassdFail.classList.add("invalid");
+  }
+  cpassdFail.classList.remove("invalid");
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkEmail();
+  createPassword();
+  cPassword();
+  emailInput.addEventListener("keyup", checkEmail);
+  passInput.addEventListener("keyup", createPassword);
+  cpassdInput.addEventListener("keyup", cPassword);
+
+  if(!emailFail.classList.contains("appear-error") &&
+     !passFail.classList.contains("appear-error") &&
+     !cpassdFail.classList.contains("appear-error"))
+  {
+    location.href = form.getAttribute("action");
+  }
+});

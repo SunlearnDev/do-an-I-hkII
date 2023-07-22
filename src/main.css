@@ -49,7 +49,7 @@ img{
     -webkit-text-stroke-color: #555;
     font-size: 320px;
     font-weight: 800;
-    left: 30px;
+    left: -15px;
     line-height: 254px;
     position: absolute;
     text-align: center;
@@ -241,3 +241,41 @@ img{
     line-height:7px;
     
     }
+.bg-gra{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(/Final/assets/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-signUp{
+    display:none;
+}
+.form_contrainer.active .form-signUp{
+    display:block;
+}
+.form_contrainer.active .form_signIn{
+    display:none;
+}
+
+.form_signup .filed .error-mail{
+    display:none;
+}
+.form_signup .filed .error-pass{
+    display:none;
+}
+.form_signup .filed .error-cpass{
+    display:none;
+}
+
+.form_signup .invalid .error-mail{
+    display: flex;    
+}
+.form_signup .invalid .error-pass{
+    display: flex;    
+}
+.form_signup .invalid .error-cpass{
+    display: flex;    
+}
